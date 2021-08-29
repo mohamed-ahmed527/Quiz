@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+body{
+	font-size: 20px;
+	font-family: 'Work Sans', sans-serif;
+	color: grey;
+  font-weight: 300;
+  text-align: center;
+  background-color:#ddd ;
+  margin: 0px ;
+  padding: 0px;
+}
+.parent{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+#quiz{
+  height: 100%;
+}
+.quiz-content{
+  width: 65% ;
+  margin-top: 40px;
+  border-radius: 7px;
+  background-color: #f8f6f0;
+}
+.slide{
+  display: none;
+}
+.active-slide{
+  display: block;
+  height: 100%;
+}
+.quiz-container{
+  position: relative;
+  height: 300px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+/**********/
+#mark-list{
+  margin-top: 40px;
+  width: 30%;
+  padding: 0px 10px;
+  border: 1px rgba(34, 34, 34, 0.699) solid;
+  border-radius: 7px;
+  background-color: rgba(34, 34, 34, 0.699);
+}
+#mark-list p{
+  color: white;
+  background-color:#ff7600ab ;
+  padding: 10px;
+  padding-left: 15px;
+  text-align: left;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#mark-list span{
+  font-size: 23px;
+  font-weight: 600;
+}
+/***********timer style*******/
+#divCountdownBar{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #dfe6e9;
+  background-color: #e7e6e2;
+  height: 15px;
+  border-radius: 7px;
+
+}
+#divTimeLeft{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: burlywood;
+  height: 100%;
+  border-radius: 7px;
+}
+/******************/
+h1{
+  font-weight: 600;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #444;
+  color: white;
+  font-family: 'Work Sans';
+  letter-spacing: 2px;
+ 
+}
+h1 span{
+  text-shadow: 2px 2px 2px  chocolate;
+}
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #444444;
+  font-family: -webkit-pictograph;
+}
+.answers {
+  width: 50%;
+  margin: 30px 0px;
+  text-align: left;
+  display: inline-block;
+  color: white;
+  
+}
+.answers label{
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: #ff76009c;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+}
+.answers label:hover{
+  background-color: #ff7600ab;
+  cursor: pointer;
+}
+/******btns**/
+.btns-group{
+  margin-bottom: 30px;
+}
+button{
+  font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+  font-weight: 600;
+	background-color: white;
+	color: grey;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 7px 15px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#mark{
+  background-color: #ffc107;
+  color: white;
+  border: 1px solid #ffc107;
+}
+#btn-num{
+  background-color: #38a;
+  color: white;
+  border: 0px;
+}
+button:hover{
+	background-color: #38a;
+  color: white;
+}
+#submit{
+  color: white;
+  display: inline-block; 
+  background: #ffc109 ; 
+  background-image :linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  color: white;  
+  border: none;  outline: none;  
+  border-radius: 20px;  
+  cursor: pointer;  
+  transition: ease .3s; 
+  width: 40%;
+  text-align: center;
+  margin: 5px 10px 20px 10px;
+  padding: 5px;
+}
+.icon{
+  position: relative;
+  padding-right: 10px;
+  margin-left: 7px;
+}
+.icon i{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+}
+.icon:first-of-type{
+  padding-left: 10px;
+  margin-left: 0px;
+  margin-right: 7px;
+}
+/******************/
+#correctQ{
+ color: #444444;
+  font-size: 23px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+#allQ  {
+  color: #444444;
+  font-size: 23px;
+  font-weight: 600;
+  font-family: sans-serif; 
+}
+#fr {
+  color: #444444;
+  font-size: 23px;
+  font-weight: 600;
+  font-family: sans-serif; 
+}

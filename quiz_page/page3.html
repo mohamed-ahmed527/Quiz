@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/quiz.css">
+    </head>
+    <body  onload="intBarCount()" >
+        <h1 id="title" > <span> Quiz on Important Facts </span></h1>
+        <!--start timer-->
+        <div id="divCountdownBar">
+            <div id="divTimeLeft">  </div>
+        </div>
+        <!--end timer-->
+        <div class="parent">
+            <div class="quiz-content">
+                <!-----quiz container-->
+                <div class="quiz-container">
+                    <div id="quiz"></div>
+                </div>
+                <!-----btns----->
+                <div class="btns-group">
+                    <button value="1" id="btn-num" >Q: 1 </button>
+                    <button id="previous" onclick="btn_minus()">
+                        <span class="icon">  <i class="ri-arrow-left-line"></i> </span>
+                        <span> Previous </span>
+                    </button>
+                    <button id="next" onclick="btn_plus()">
+                        <span>Next</span>
+                        <span class="icon"> <i class="ri-arrow-right-line"></i> </span> 
+                    </button>
+                    <button id="mark"> Mark </button>
+                    <div>
+                        <button id="submit" >Submit Quiz</button>
+                    </div>
+                </div>
+            </div>
+            <div id="mark-list">  </div>
+        </div>
+        <!-----scripts----->
+        <script src="js/quiz.js"></script>
+    </body>
+</html>
